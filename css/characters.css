@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    gap: 24px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    height: 15vh;
+    place-items: center;
+    justify-content: space-between;
+    padding: 0px 45px;
+}
+
+input{
+    border: none;
+    width: 100%;
+    font-family: var(--fonte-principal);
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.input{
+    gap: 15px;
+    border-radius: 24px;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 12px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.input img{
+    height: 50%;
+}
+
+button{
+    border: none;
+    border-radius: 24px;
+    padding: 15px 15px;
+    background: var(--lufa);
+}
+
+a{
+    text-decoration: none;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.personagem{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    place-items: center;
+    padding: 2rem 1rem;
+    width: 25vw;
+    background-color: var(--grif);
+    border-radius: 24px;
+}
+
+.personagem h2{
+    height: fit-content;
+    place-self: center;
+    font-size: 1.8rem;
+    padding: 15px;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #fff;
+    font-family: var(--fonte-principal);
+}
+
+span{
+    font-size: 1.3rem;
+}
